@@ -1,0 +1,6 @@
+node_modules/
+index.backup*.html
+_build.py
+_transform.py
+replace_hero.js
+update_nav.js

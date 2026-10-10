@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+    /* Texture and ink aesthetic */
+    body {
+      background-color: #EDE6D6;
+      background-image: radial-gradient(#1A1816 0.75px, transparent 0.75px), radial-gradient(#1A1816 0.75px, #EDE6D6 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      color: #1A1816;
+      overflow-x: hidden;
+    }
+    
+    .paper-noise {
+      box-shadow: inset 0 0 100px rgba(26,24,22,0.06);
+    }
+
+    .masking-tape {
+      background: rgba(226, 214, 180, 0.92);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+      clip-path: polygon(3% 0%, 97% 2%, 100% 95%, 98% 100%, 2% 98%, 0% 5%);
+    }
+
+    .stamped-border {
+      border: 3px solid #1A1816;
+      box-shadow: 4px 4px 0px #1A1816;
+    }
+
+    .stamped-border-red {
+      border: 3px solid #E8472B;
+      box-shadow: 4px 4px 0px #E8472B;
+    }
+
+    .hand-strike {
+      position: relative;
+    }
+    .hand-strike::after {
+      content: '';
+      position: absolute;
+      left: -4px;
+      right: -4px;
+      top: 52%;
+      height: 3px;
+      background: #E8472B;
+      transform: rotate(-1.5deg);
+    }
+
+    @keyframes slow-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: slow-spin 22s linear infinite;
+    }
+
+    .vertical-rl {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+  
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid #E8472B; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+html { overflow-x: clip; }
+body { overflow-x: clip; max-width: 100vw; }

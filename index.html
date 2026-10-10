@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perú North Shore | Surf trips en el norte del Perú</title>
+<meta name="description" content="Surf trips con coach local en el norte del Perú: Chicama, Lobitos, Cabo Blanco y Máncora. Grupos de 6 a 8 surfistas, camioneta 4x4, zodiac y videoanálisis 4K.">
+<meta name="theme-color" content="#0A5560">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Perú North Shore | Surf trips sin crowd">
+<meta property="og:description" content="Expediciones de surf con coach local en Chicama, Lobitos y Cabo Blanco. Cupos limitados.">
+<meta property="og:image" content="img/surfer-en-ola-izquierda-norte-peru.jpg">
+<meta property="og:locale" content="es_PE">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Instrument+Serif:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+  :root {
+    --font-display: 'Bungee', Impact, sans-serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  .font-slab { font-family: var(--font-display) !important; font-weight: 400 !important; text-transform: none !important; }
+  .font-body { font-family: var(--font-body) !important; }
+</style>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/anim.css?v=7">
+</head>
+<body class="font-mono text-ink-black antialiased paper-noise selection:bg-stamp-red selection:text-white">
+<!-- PAPER GRAIN OVERLAY -->
+<div id="paper-grain" aria-hidden="true"></div>
+<!-- SCROLL PROGRESS BAR -->
+<div id="scroll-progress" aria-hidden="true"></div>
+<!-- CUSTOM CURSOR (desktop only) -->
+<div id="custom-cursor" aria-hidden="true"><span class="cursor-label">VER</span></div>
+<!-- PRELOADER -->
+<div id="preloader" role="status" aria-label="Cargando">
+  <div id="preloader__curtain-top"></div>
+  <div id="preloader__curtain-bottom"></div>
+  <img id="preloader__stamp" src="img/logo.png" alt="" aria-hidden="true">
+</div>
+<!-- MARGIN LABELS (Rotated coordinates & field notes) -->
+<div class="side-label side-label-left vertical-rl flex-col items-center gap-4 text-[11px] font-mono tracking-widest select-none">
+<span class="">LAT: 04° 24′ S · LON: 81° 18′ W</span>
+<span class="w-8 h-[1px] bg-ink-black/30"></span>
+<span class="font-bold">LOBITOS / CHICAMA FIELD LOG</span>
+</div>
+<div class="side-label side-label-right vertical-rl flex-col items-center gap-4 text-[11px] font-mono tracking-widest select-none">
+<span class="">PACASMAYO · CABO BLANCO · MÁNCORA</span>
+<span class="w-8 h-[1px] bg-ink-black/30"></span>
+<span class="text-stamp-red">BITÁCORA 2026 OFICIAL</span>
+</div>
+<!-- 1. NAVBAR — transparente sobre hero, fija arriba -->
+<header id="main-header" class="">
+<div class="py-3 px-5 md:px-12 flex justify-between items-center gap-4">
+<!-- Logo -->
+<a class="flex items-center gap-3" href="#hero" aria-label="Perú North Shore, inicio">
+<img alt="" class="w-10 h-10 object-contain main-logo" src="img/logo.png" width="40" height="40">
+<span class="flex flex-col logo-text">
+<span class="font-slab text-base tracking-tight leading-none">Perú North Shore</span>
+<span class="text-[10px] tracking-widest uppercase font-mono logo-subtitle">Expedición Surf</span>
+</span>
+</a>
+<!-- Nav central -->
+<nav class="hidden md:flex items-center main-nav-links" aria-label="Principal">
+<a href="#viajes">Viajes</a>
+<a href="#spots">Spots</a>
+<a href="#incluye">Qué incluye</a>
+<a href="#coaching">Coaching</a>
+<a href="#faq">FAQ</a>
+</nav>
+<!-- Derecha: idioma + CTA + hamburguesa -->
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center gap-0 text-[11px] font-semibold tracking-wider lang-selector">
+<a href="#" class="px-1.5 py-0.5 active-lang">ES</a>
+<span class="separator">|</span>
+<a href="#" class="px-1.5 py-0.5">EN</a>
+<span class="separator">|</span>
+<a href="#" class="px-1.5 py-0.5">PT</a>
+</div>
+<a class="hero-nav-cta bg-[#E8472B] hover:bg-[#d63a1f] text-[#F4EBDD] text-[11px] font-bold uppercase tracking-wider px-4 py-2.5 transition-colors flex items-center gap-2" href="https://wa.me/51951235217?text=%C2%A1Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20de%20un%20surf%20trip" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a3.8 3.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<span class="hidden sm:inline">Reservar</span> WhatsApp
+</a>
+<button id="menu-btn" class="md:hidden text-current p-2 -mr-2" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+</button>
+</div>
+</div>
+</header>
+<!-- Menú móvil (Panel a pantalla completa) -->
+<nav id="mobile-nav" class="fixed inset-0 hidden flex-col justify-center items-center gap-8 bg-[#1A1816]" aria-label="Móvil">
+<button id="menu-close-btn" class="absolute top-6 right-6 text-[#F4EBDD] p-2" aria-label="Cerrar menú">
+<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+</button>
+<a class="text-[#F4EBDD] font-body text-2xl font-bold uppercase tracking-widest" href="#viajes">Viajes</a>
+<a class="text-[#F4EBDD] font-body text-2xl font-bold uppercase tracking-widest" href="#spots">Spots</a>
+<a class="text-[#F4EBDD] font-body text-2xl font-bold uppercase tracking-widest" href="#incluye">Qué incluye</a>
+<a class="text-[#F4EBDD] font-body text-2xl font-bold uppercase tracking-widest" href="#coaching">Coaching</a>
+<a class="text-[#F4EBDD] font-body text-2xl font-bold uppercase tracking-widest" href="#faq">FAQ</a>
+</nav>
+
+<!-- 2. HERO — BITÁCORA DE EXPEDICIÓN -->
+<section class="hero-section" id="hero">
+  <!-- Fondo fotográfico -->
+  <div class="hero-bg">
+    <img id="hero-bg-img" alt="Surfer en ola izquierda norte Perú" fetchpriority="high" src="img/surfer-en-ola-izquierda-norte-peru.jpg">
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-grain" aria-hidden="true"></div>
+
+  <!-- Texto vertical margen derecho (desktop) -->
+  <div class="hero-side-label" aria-hidden="true">BITÁCORA 2026 · COSTA PACÍFICO SUR · LATITUD 04°S – 07°S</div>
+
+  <!-- Logo circular girando -->
+  <div id="hero-logo-spin" class="hero-logo-spin">
+    <img alt="" aria-hidden="true" src="img/logo.png">
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="hero-content">
+    <p id="hero-pretitle" class="hero-pretitle font-serif italic">Surfea el norte del Perú</p>
+
+    <div class="hero-title-block" id="hero-title-block">
+      <div class="hero-title-line"><span class="hero-title-word font-slab" id="hero-word-sin">SIN</span></div>
+      <div class="hero-title-line"><span class="hero-title-word font-slab" id="hero-word-crowd">CROWD</span></div>
+      <div id="hero-underline" class="hero-underline"></div>
+    </div>
+
+    <p id="hero-desc" class="hero-description font-body">Surf trips guiados y coaching con videoanálisis en las mejores olas del norte peruano.</p>
+
+    <div id="hero-actions" class="hero-actions">
+      <a id="hero-wa-btn" class="hero-btn-primary font-slab" href="https://wa.me/51951235217?text=%C2%A1Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20de%20un%20surf%20trip" rel="noopener noreferrer" target="_blank">
+        <svg class="hero-wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a3.8 3.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>Escríbenos por WhatsApp</span>
+      </a>
+      <a id="scroll-hint" class="hero-btn-secondary font-mono" href="#viajes">Ver próximos viajes <span class="hero-arrow">↓</span></a>
+    </div>
+  </div>
+
+  <!-- Coordenadas en la base -->
+  <div class="hero-bottom-bar">
+    <p class="hero-coords font-mono">Costa norte, Perú · 4°S a 7°S · Surf trips con coach local</p>
+  </div>
+</section>
+<!-- MARQUEE CINTA ENTRE HERO Y CIFRAS -->
+<div class="marquee-wrap overflow-hidden w-full">
+  <div class="marquee-track flex w-max">
+    <div class="marquee-inner flex w-max whitespace-nowrap">
+      <span class="font-slab text-paper text-base md:text-xl tracking-normal px-6 pt-1">SIN CROWD · CHICAMA · LOBITOS · PACASMAYO · CABO BLANCO · MANCORA ·&nbsp;</span>
+    </div>
+  </div>
+</div>
+<!-- 3. CIFRAS DISPERSAS (SIN FILA DE 4 TARJETAS - COMPOSICIÓN LIBRE DE IMPRENTA) -->
+<section class="scroll-mt-16 w-full py-12 md:py-16 border-b-5 border-ink-black bg-paper relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="text-[11px] uppercase tracking-widest text-ink-black/60 mb-6 font-bold flex items-center gap-2">
+<span class="w-4 h-0.5 bg-ink-black"></span>
+<span class="">REGISTRO ACUMULADO DE OPERACIONES · PERÚ NORTH SHORE</span>
+</div>
+<!-- Asymmetrical scatter layout -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 items-end">
+<!-- Metric 1: +9K (offset left) -->
+<div class="lg:col-span-3 border-l-4 border-ink-black pl-4">
+<div class="font-slab text-5xl md:text-6xl text-ink-black leading-none tracking-normal">
+            +9K
+          </div>
+<div class="mt-2 text-xs uppercase font-bold text-stamp-red">Comunidad Instagram</div>
+<p class="font-body text-xs text-ink-black/70 mt-1">
+            Seguidores reales compartiendo reportes diarios en <span class="font-bold">@perunorthshore</span>.
+          </p>
+</div>
+<!-- Metric 2: 6 AÑOS (floating higher with stamp style) -->
+<div class="lg:col-span-3 border-3 border-dashed border-ink-black p-4 bg-paper-card transform -rotate-1 shadow-[4px_4px_0px_#1A1816]">
+<div class="text-[10px] font-bold text-petrol-dark uppercase tracking-widest">Trayectoria</div>
+<div class="font-slab text-5xl md:text-5xl text-petrol-dark leading-none my-1 tracking-normal">
+            06
+          </div>
+<div class="font-serif italic text-base text-ink-black">Años abriendo rutas en el desierto norteño.</div>
+</div>
+<!-- Metric 3: +300 SURFISTAS (large block) -->
+<div class="lg:col-span-3 border-l-4 border-stamp-red pl-4">
+<div class="font-slab text-5xl md:text-6xl text-stamp-red leading-none tracking-normal">
+            +300
+          </div>
+<div class="mt-2 text-xs uppercase font-bold text-ink-black">Surfistas Guiados</div>
+<p class="font-body text-xs text-ink-black/70 mt-1">
+            Desde intermedios perfeccionando su carving hasta cazadores de tubos pesados.
+          </p>
+</div>
+<!-- Metric 4: 15 PAÍSES (tucked bottom right) -->
+<div class="lg:col-span-3 bg-ink-black text-paper p-5 border-3 border-ink-black transform rotate-1">
+<div class="text-[10px] tracking-widest uppercase text-stamp-red font-bold">Alcance Global</div>
+<div class="font-slab text-4xl text-paper leading-none my-1 tracking-normal">
+            15
+          </div>
+<p class="text-xs font-body text-paper/80">
+            Naciones representadas en el agua: Chile, Brasil, USA, España, Australia y más.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- MARQUEE CINTA 2 (entre cifras y viajes) -->
+<div class="marquee-wrap overflow-hidden w-full">
+  <div class="marquee-track flex w-max">
+    <div class="marquee-inner flex w-max whitespace-nowrap">
+      <span class="font-slab text-paper text-base md:text-xl tracking-normal px-6 pt-1">ZODIAC · 4X4 DESERT · VIDEOANÁLISIS 4K · COACH LOCAL · CUPOS LIMITADOS ·&nbsp;</span>
+    </div>
+  </div>
+</div>
+<!-- 4. PRÓXIMOS VIAJES (FICHAS DE EXPEDICIÓN Y BOLETOS PEGADOS CON CINTA) -->
+<section class="scroll-mt-16 w-full py-16 md:py-24 border-b-5 border-ink-black bg-paper" id="viajes">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<!-- Section Title -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b-3 border-ink-black pb-4">
+<div>
+<span class="text-xs uppercase tracking-widest font-bold text-stamp-red">[ DISPONIBILIDAD TEMPORADA 2026 ]</span>
+<h2 class="font-slab text-3xl md:text-5xl text-ink-black tracking-normal leading-tight mt-1">
+            Boletos de Expedición
+          </h2>
+</div>
+<p class="font-body text-xs md:text-sm max-w-md text-ink-black/80">
+          Cupos estrictamente reducidos (6 a 8 surfistas por salida) para garantizar cero aglomeración en la camioneta y en el pico.
+        </p>
+</div>
+<!-- Asymmetric Trip Tickets Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- TRIP 1: INCLINED EXPEDITION TICKET (8 cols) -->
+<div class="lg:col-span-7 bg-paper-card border-4 border-ink-black p-6 md:p-8 relative shadow-[8px_8px_0px_#1A1816] transform -rotate-1 hover:rotate-0 transition-transform">
+<!-- Masking tape top-center -->
+<div class="absolute -top-4 left-1/3 w-36 h-7 masking-tape transform rotate-1 z-10"></div>
+<div class="flex flex-wrap items-center justify-between gap-2 border-b-2 border-dashed border-ink-black pb-3 mb-4">
+<span class="font-mono text-xs font-bold text-petrol-dark uppercase">EXP-01 · CLÁSICO NORTE</span>
+<span class="bg-stamp-red text-white text-[11px] font-mono uppercase px-2 py-0.5 border border-ink-black font-bold">
+              ★ CUPOS LIMITADOS · SÓLO 3 DISPONIBLES
+            </span>
+</div>
+<div class="flex flex-col md:flex-row gap-6 mb-6">
+<div class="md:w-1/2">
+<h3 class="font-slab text-xl md:text-2xl text-ink-black leading-snug">
+                Surf Camp Norte Clásico
+              </h3>
+<p class="font-serif italic text-lg text-ink-black/80 my-2">
+                "La sesión interminable: Chicama con bote zodiac y los tubos secos de Lobitos."
+              </p>
+<div class="font-body text-xs space-y-1 text-ink-black/80 mt-3">
+<p class=""><span class="font-bold">Fechas:</span> 14 al 21 Nov 2026</p>
+<p class=""><span class="font-bold">Duración:</span> 8 Días / 7 Noches</p>
+<p class=""><span class="font-bold">Nivel:</span> Intermedio a Avanzado</p>
+<p class=""><span class="font-bold">Spots:</span> Chicama + Pacasmayo + Lobitos</p>
+</div>
+</div>
+<div class="md:w-1/2 flex flex-col justify-between border-t md:border-t-0 md:border-l-2 md:border-ink-black md:pl-6 pt-4 md:pt-0">
+<div class="relative aspect-video border-2 border-ink-black overflow-hidden mb-4">
+<img loading="lazy" decoding="async" alt="Chicama surf break" class="w-full h-full object-cover filter contrast-125" src="img/chicama-surf-break.jpg">
+<div class="absolute bottom-1 right-1 bg-ink-black text-paper text-[9px] px-1 font-mono">BOTE INCLUIDO</div>
+</div>
+<div>
+<div class="text-[10px] uppercase tracking-wider text-ink-black/60">Tarifa Paquete Completo</div>
+<div class="font-slab text-4xl text-ink-black border-b-4 border-ink-black inline-block">
+                  US$ 1,490
+                </div>
+</div>
+</div>
+</div>
+<!-- Bottom CTA of ticket -->
+<div class="pt-4 border-t-2 border-ink-black flex flex-col sm:flex-row items-center justify-between gap-4">
+<span class="text-xs text-ink-black/70 font-mono">Incluye hotel mar, 4x4, zodiac y videoanálisis diario.</span>
+<a class="w-full sm:w-auto text-center bg-stamp-red hover:bg-[#d63a1f] text-paper font-slab text-lg pt-3 pb-2 px-6 border-2 border-ink-black transition-colors shadow-[2px_2px_0px_#1A1816]" href="https://wa.me/51951235217?text=%C2%A1Hola!%20Quiero%20reservar%20el%20Surf%20Camp%20Norte%20del%2014-21%20Nov" rel="noopener noreferrer" target="_blank">
+              Asegurar Cupo ➔
+            </a>
+</div>
+</div>
+<!-- TRIP 2: COMPACT DISPATCH TICKET (5 cols) -->
+<div class="lg:col-span-5 bg-paper border-4 border-ink-black p-6 relative shadow-[6px_6px_0px_#0A5560] transform rotate-1 hover:rotate-0 transition-transform">
+<!-- Masking tape top-right -->
+<div class="absolute -top-3 right-6 w-28 h-6 masking-tape transform -rotate-3 z-10"></div>
+<div class="flex items-center justify-between border-b-2 border-ink-black pb-2 mb-3 text-xs font-mono font-bold">
+<span class="text-stamp-red">EXP-02 · SURF TRIP EXPRESS</span>
+<span class="border border-ink-black px-1.5 bg-paper-card">4 CUPOS</span>
+</div>
+<h3 class="font-slab text-xl text-ink-black leading-snug">
+            Escape Relámpago
+          </h3>
+<p class="font-serif italic text-base text-ink-black/80 my-2">
+            "4 días de alta cadencia para surfear los mejores swells de Lobitos y Cabo Blanco."
+          </p>
+<div class="font-body text-xs space-y-1 text-ink-black/80 my-4 bg-paper-card p-3 border border-ink-black">
+<p class=""><span class="font-bold">Fechas:</span> 5 al 8 Dic 2026 (4D / 3N)</p>
+<p class=""><span class="font-bold">Nivel:</span> Todos los niveles (2 camionetas)</p>
+<p class=""><span class="font-bold">Base:</span> Talara / Lobitos / El Ñuro</p>
+</div>
+<div class="flex items-end justify-between pt-2 border-t border-ink-black">
+<div>
+<span class="text-[10px] uppercase tracking-wider text-ink-black/60 block">Precio Total</span>
+<span class="font-slab text-3xl text-petrol-dark underline decoration-stamp-red decoration-2">US$ 690</span>
+</div>
+<a class="bg-stamp-red hover:bg-[#d63a1f] text-white font-slab text-lg px-4 pt-3 pb-2 border-2 border-ink-black transition-colors" href="https://wa.me/51951235217?text=%C2%A1Hola!%20Quiero%20reservar%20el%20Surf%20Trip%20Express%20del%205-8%20Dic" rel="noopener noreferrer" target="_blank">
+              Reservar Express ➔
+            </a>
+</div>
+</div>
+<!-- TRIP 3: FULL-WIDTH PETROL SLAB BLOCK (CUSTOM PRIVATE TRIP) -->
+<div class="lg:col-span-12 bg-petrol-dark text-paper border-4 border-ink-black p-6 md:p-8 shadow-[8px_8px_0px_#1A1816] mt-4">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+<div class="max-w-2xl">
+<div class="inline-block bg-stamp-red text-white text-[10px] font-mono uppercase px-2 py-0.5 mb-2 font-bold">
+                EXPEDICIÓN PRIVADA EXCLUSIVA
+              </div>
+<h3 class="font-slab text-xl md:text-3xl text-paper tracking-normal leading-snug">
+                Diseña la ruta a tu propia medida
+              </h3>
+<p class="font-body text-xs md:text-sm text-paper/80 mt-2">
+                Para tu grupo privado (2 a 6 amigos o familia). Eliges fechas, nivel de adrenalina y te asignamos camioneta 4x4 dedicada con guía de por vida.
+              </p>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 border-t lg:border-t-0 lg:border-l-2 lg:border-paper/30 pt-4 lg:pt-0 lg:pl-8">
+<div>
+<span class="text-[10px] uppercase tracking-wider text-paper/70 block">Tarifa por persona</span>
+<span class="font-slab text-3xl md:text-4xl text-paper">Desde US$ 250<span class="text-sm font-mono">/día</span></span>
+</div>
+<a class="bg-stamp-red hover:bg-paper hover:text-ink-black text-white font-slab text-xl pt-3 pb-2 px-6 border-2 border-ink-black transition-all shadow-[4px_4px_0px_#1A1816]" href="https://wa.me/51951235217?text=%C2%A1Hola!%20Quiero%20cotizar%20un%20viaje%20privado%20a%20medida" rel="noopener noreferrer" target="_blank">
+                Cotizar a Medida ➔
+              </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Field note footnote -->
+<div class="mt-8 border-2 border-dashed border-ink-black p-4 bg-paper-card flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono">
+<div class="flex items-center gap-2">
+<span class="font-slab text-sm bg-ink-black text-paper px-2 py-0.5">NOTA DE CAMPO</span>
+<span class="">¿Quieres sumar sesiones de videoanálisis extra? Sesión individual de teleobjetivo 4K: <strong class="text-stamp-red font-bold">US$ 80 por sesión</strong>.</span>
+</div>
+<span class="text-ink-black/60 italic font-serif">Cupos confirmados únicamente con abono previo del 30%</span>
+</div>
+</div>
+</section>
+<!-- 5. QUÉ INCLUYE (CHECKLIST DE EXPEDICIÓN MECANOGRAFIADA CON CASILLAS [X]) -->
+<section class="scroll-mt-16 w-full py-16 md:py-24 border-b-5 border-ink-black bg-paper-card" id="incluye">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12 border-b-3 border-ink-black pb-4">
+<div>
+<span class="text-xs uppercase tracking-widest font-bold text-stamp-red">[ INVENTARIO Y LOGÍSTICA COMPLETA ]</span>
+<h2 class="font-slab text-2xl md:text-4xl text-ink-black tracking-normal leading-tight mt-1">
+            Checklist de Expedición
+          </h2>
+</div>
+<div class="font-body text-sm text-ink-black/70">
+          Todo coordinado para que tu única preocupación sea remar la ola.
+        </div>
+</div>
+<!-- 8 Pillars in rustic typewriter list format with heavy [X] stamps -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 lg:gap-8 mt-8">
+  <!-- Card 1 -->
+  <div class="border-3 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between transform -rotate-2 hover:rotate-0 transition-transform duration-300 relative z-10">
+    <div class="relative z-10">
+      <div class="flex items-center justify-between mb-4">
+        <div class="w-8 h-8 rounded-full border-2 border-stamp-red flex items-center justify-center text-stamp-red font-bold text-xl transform -rotate-12 shadow-[2px_2px_0px_#E8472B] select-none">✓</div>
+        <span class="font-mono text-[10px] font-bold text-ink-black/40">N.º 01</span>
+      </div>
+      <h3 class="font-bold text-base uppercase text-ink-black font-body">Recojo Aeropuerto</h3>
+      <p class="text-xs font-mono text-ink-black/80 mt-3 leading-relaxed">
+        Transfer privado ida y vuelta desde los aeropuertos de Talara (TYL) o Piura (PIU) con espacio asegurado para fundas de tablas.
+      </p>
+    </div>
+    <div class="text-[10px] font-mono text-ink-black/50 mt-6 pt-3 border-t-2 border-ink-black/20 border-dashed relative z-10">TALARA / PIURA TRANSIT</div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="border-3 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between transform rotate-1 hover:-rotate-1 transition-transform duration-300 relative z-10 overflow-hidden">
+    <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-12 text-4xl font-slab text-stamp-red opacity-10 pointer-events-none select-none z-0 border-4 border-stamp-red px-3 py-1">APROBADO</span>
+    <div class="relative z-10">
+      <div class="flex items-center justify-between mb-4">
+        <div class="w-8 h-8 rounded-sm border-2 border-stamp-red flex items-center justify-center text-stamp-red font-bold text-xl transform rotate-6 shadow-[2px_2px_0px_#E8472B] select-none">✓</div>
+        <span class="font-mono text-[10px] font-bold text-ink-black/40">N.º 02</span>
+      </div>
+      <h3 class="font-bold text-base uppercase text-ink-black font-body">Hospedaje de Ola</h3>
+      <p class="text-xs font-mono text-ink-black/80 mt-3 leading-relaxed">
+        Habitación privada o doble frente al mar. Agua caliente, cama ergonómica y Wi-Fi de alta velocidad para descansar o teletrabajar.
+      </p>
+    </div>
+    <div class="text-[10px] font-mono text-ink-black/50 mt-6 pt-3 border-t-2 border-ink-black/20 border-dashed relative z-10">OCEAN VIEW LODGE</div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="border-3 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between transform -rotate-1 hover:rotate-1 transition-transform duration-300 relative z-10">
+    <div class="relative z-10">
+      <div class="flex items-center justify-between mb-4">
+        <div class="w-8 h-8 rounded-full border-2 border-stamp-red flex items-center justify-center text-stamp-red font-bold text-xl transform rotate-12 shadow-[2px_2px_0px_#E8472B] select-none">✓</div>
+        <span class="font-mono text-[10px] font-bold text-ink-black/40">N.º 03</span>
+      </div>
+      <h3 class="font-bold text-base uppercase text-ink-black font-body">Cocina de Mar</h3>
+      <p class="text-xs font-mono text-ink-black/80 mt-3 leading-relaxed">
+        Desayunos proteicos completos y cenas con la mejor gastronomía marina del norte peruano: ceviches frescos y pesca artesanal del día.
+      </p>
+    </div>
+    <div class="text-[10px] font-mono text-ink-black/50 mt-6 pt-3 border-t-2 border-ink-black/20 border-dashed relative z-10">NUTRICIÓN SURF</div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="border-3 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between transform rotate-2 hover:rotate-0 transition-transform duration-300 relative z-10">
+    <div class="relative z-10">
+      <div class="flex items-center justify-between mb-4">
+        <div class="w-8 h-8 rounded-md border-2 border-stamp-red flex items-center justify-center text-stamp-red font-bold text-xl transform -rotate-6 shadow-[2px_2px_0px_#E8472B] select-none">✓</div>
+        <span class="font-mono text-[10px] font-bold text-ink-black/40">N.º 04</span>
+      </div>
+      <h3 class="font-bold text-base uppercase text-ink-black font-body">Camioneta 4x4</h3>
+      <p class="text-xs font-mono text-ink-black/80 mt-3 leading-relaxed">
+        Vehículos todoterreno equipados con racks especializados para cruzar quebradas desérticas y perseguir la dirección óptima del swell.
+      </p>
+    </div>
+    <div class="text-[10px] font-mono text-ink-black/50 mt-6 pt-3 border-t-2 border-ink-black/20 border-dashed relative z-10">SAFARI OFFROAD</div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="border-3 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between transform rotate-1 hover:-rotate-1 transition-transform duration-300 relative z-10">
+    <div class="relative z-10">
+      <div class="flex items-center justify-between mb-4">
+        <div class="w-8 h-8 rounded-full border-2 border-stamp-red flex items-center justify-center text-stamp-red font-bold text-xl transform rotate-3 shadow-[2px_2px_0px_#E8472B] select-none">✓</div>
+        <span class="font-mono text-[10px] font-bold text-ink-black/40">N.º 05</span>
+      </div>
+      <h3 class="font-bold text-base uppercase text-ink-black font-body">Coach en el Agua</h3>
+      <p class="text-xs font-mono text-ink-black/80 mt-3 leading-relaxed">
+        Orientación continua en el line-up: posicionamiento exacto en el pico, lectura de corrientes, timing de remada y salida limpia.
+      </p>
+    </div>
+    <div class="text-[10px] font-mono text-ink-black/50 mt-6 pt-3 border-t-2 border-ink-black/20 border-dashed relative z-10">LINE-UP ASSISTANCE</div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="border-3 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between transform -rotate-2 hover:rotate-0 transition-transform duration-300 relative z-10 overflow-hidden">
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0">
+      <span class="transform -rotate-12 text-5xl font-slab font-bold text-stamp-red opacity-10">CLASIFICADO</span>
+    </div>
+    <div class="relative z-10">
+      <div class="flex items-center justify-between mb-4">
+        <div class="w-8 h-8 rounded-sm border-2 border-stamp-red flex items-center justify-center text-stamp-red font-bold text-xl transform -rotate-12 shadow-[2px_2px_0px_#E8472B] select-none">✓</div>
+        <span class="font-mono text-[10px] font-bold text-ink-black/40">N.º 06</span>
+      </div>
+      <h3 class="font-bold text-base uppercase text-ink-black font-body">Videoanálisis 4K</h3>
+      <p class="text-xs font-mono text-ink-black/80 mt-3 leading-relaxed relative z-10">
+        Filmación diaria con teleobjetivo y sesión vespertina proyectada para corregir postura, ángulo de compresión y fluidez cuadro a cuadro.
+      </p>
+    </div>
+    <div class="text-[10px] font-mono text-ink-black/50 mt-6 pt-3 border-t-2 border-ink-black/20 border-dashed relative z-10">DIAGNÓSTICO TÉCNICO</div>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="border-3 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between transform rotate-2 hover:-rotate-1 transition-transform duration-300 relative z-10 overflow-hidden">
+    <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-6 text-4xl font-slab text-stamp-red opacity-10 pointer-events-none select-none z-0 border-y-4 border-stamp-red py-1 w-full text-center">INCLUIDO</span>
+    <div class="relative z-10">
+      <div class="flex items-center justify-between mb-4">
+        <div class="w-8 h-8 rounded-full border-2 border-stamp-red flex items-center justify-center text-stamp-red font-bold text-xl transform rotate-6 shadow-[2px_2px_0px_#E8472B] select-none">✓</div>
+        <span class="font-mono text-[10px] font-bold text-ink-black/40">N.º 07</span>
+      </div>
+      <h3 class="font-bold text-base uppercase text-ink-black font-body">Zodiac en Chicama</h3>
+      <p class="text-xs font-mono text-ink-black/80 mt-3 leading-relaxed">
+        Bote a motor que te devuelve al punto de inicio tras correr olas de 2 kilómetros. Aumenta al cuádruple las olas surfeadas por sesión.
+      </p>
+    </div>
+    <div class="text-[10px] font-mono text-ink-black/50 mt-6 pt-3 border-t-2 border-ink-black/20 border-dashed relative z-10">CHICAMA FAST RETRIEVAL</div>
+  </div>
+
+  <!-- Card 8 -->
+  <div class="border-3 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between transform -rotate-1 hover:rotate-1 transition-transform duration-300 relative z-10">
+    <div class="relative z-10">
+      <div class="flex items-center justify-between mb-4">
+        <div class="w-8 h-8 rounded-sm border-2 border-stamp-red flex items-center justify-center text-stamp-red font-bold text-xl transform rotate-12 shadow-[2px_2px_0px_#E8472B] select-none">✓</div>
+        <span class="font-mono text-[10px] font-bold text-ink-black/40">N.º 08</span>
+      </div>
+      <h3 class="font-bold text-base uppercase text-ink-black font-body">Guías Locales</h3>
+      <p class="text-xs font-mono text-ink-black/80 mt-3 leading-relaxed">
+        Surfistas locales nacidos y criados en estas costas: respeto total en el agua, acceso a bahías privadas y lectura impecable del viento.
+      </p>
+    </div>
+    <div class="text-[10px] font-mono text-ink-black/50 mt-6 pt-3 border-t-2 border-ink-black/20 border-dashed relative z-10">LOCAL CREW ONLY</div>
+  </div>
+</div>
+
+<!-- TACHADO INTENCIONAL CON LÍNEA ROJA A MANO (What is not included) -->
+<div class="mt-16 w-full max-w-4xl mx-auto relative mb-8">
+  <!-- Masking tape 1 -->
+  <div class="absolute -top-3 left-10 md:left-1/4 w-16 md:w-20 h-6 bg-[#E8E2D2] opacity-90 shadow-sm transform -rotate-3 z-20 mix-blend-multiply"></div>
+  <!-- Masking tape 2 -->
+  <div class="absolute -bottom-3 right-10 md:right-1/4 w-16 md:w-24 h-6 bg-[#E8E2D2] opacity-90 shadow-sm transform rotate-2 z-20 mix-blend-multiply"></div>
+  
+  <div class="flex flex-col md:flex-row items-center justify-between gap-4 p-4 bg-[#D34C37] text-paper border-4 border-ink-black shadow-[8px_8px_0px_#1A1816] transform rotate-1 relative z-10">
+    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+      <div class="flex-shrink-0 w-12 h-12 bg-ink-black flex items-center justify-center rounded-full text-paper font-bold text-3xl transform -rotate-12 shadow-[2px_2px_0px_#E8E2D2]">!</div>
+      <div class="text-center sm:text-left">
+        <div class="font-mono text-xs uppercase font-bold text-ink-black tracking-widest mb-1 bg-paper px-2 py-0.5 inline-block transform -rotate-1">ADVERTENCIA ADUANERA</div>
+        <p class="text-xs md:text-sm font-mono text-paper mt-1 leading-relaxed">
+          <span class="font-bold text-ink-black bg-paper px-1">EXCLUSIONES:</span> No incluye vuelos aéreos a Piura/Talara, almuerzos libres en el pueblo, ni tablas de surf personales.
+        </p>
+      </div>
+    </div>
+    <div class="text-[10px] md:text-xs font-mono text-ink-black bg-paper border-2 border-ink-black px-3 py-2 font-bold whitespace-nowrap transform -rotate-2 shadow-[2px_2px_0px_#1A1816]">
+      * ALQUILER DE QUIVER DISPONIBLE
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- 6. SPOTS Y OLAS (SECCIÓN ESTRELLA - MAPA ILUSTRADO & FICHAS DE ROMPIENTES) -->
+<section class="scroll-mt-16 w-full py-16 md:py-24 border-b-5 border-ink-black bg-paper relative" id="spots">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b-3 border-ink-black pb-4">
+<div>
+<span class="text-xs uppercase tracking-widest font-bold text-stamp-red">[ CARTOGRAFÍA DEL PACÍFICO SUR ]</span>
+<h2 class="font-slab text-3xl md:text-5xl text-ink-black tracking-normal leading-tight mt-1">
+            Ruta Costera de Rompientes
+          </h2>
+</div>
+<p class="font-serif italic text-lg md:text-xl text-ink-black/80 max-w-md">
+          "Desde la cuna de los caballitos de totora en Trujillo hasta los cañones de agua tibia en el límite con Tumbes."
+        </p>
+</div>
+<!-- DIAGRAMA / MAPA ESTILIZADO DE LA COSTA NORTE (LINOGRABADO STYLE) -->
+<div class="border-4 border-ink-black bg-paper-card p-6 md:p-8 mb-12 shadow-[8px_8px_0px_#1A1816] relative overflow-hidden">
+<div class="flex items-center justify-between border-b-2 border-ink-black pb-3 mb-6 text-xs font-mono">
+<span class="font-bold uppercase tracking-widest text-petrol-dark">ESQUEMA DE COSTA: 08°05'S ➔ 04°15'S</span>
+<span class="text-stamp-red font-bold hidden sm:inline">SW SWELL CORRIDOR · OFFSHORE PERMANENTE</span>
+</div>
+<!-- The coastal route path visual -->
+<div class="relative py-4 flex flex-col lg:flex-row justify-between items-center gap-6 text-center">
+<!-- Spot 1: Huanchaco -->
+<a href="#spot-huanchaco" class="flex flex-col items-center group">
+<span class="font-mono text-[10px] text-ink-black/60">08°05′S · SUR</span>
+<div class="w-8 h-8 rounded-full border-2 border-ink-black bg-paper flex items-center justify-center font-slab text-xs font-bold my-2 group-hover:bg-stamp-red group-hover:text-white transition-colors">
+              01
+            </div>
+<span class="font-slab text-sm text-ink-black">Huanchaco</span>
+<span class="font-mono text-[11px] text-ink-black/70">Cuna del Surf</span>
+</a>
+<div class="hidden lg:block w-12 h-[2px] bg-ink-black/40 border-b border-dashed border-ink-black"></div>
+<!-- Spot 2: Chicama -->
+<a href="#spot-chicama" class="flex flex-col items-center group">
+<span class="font-mono text-[10px] text-stamp-red font-bold">07°42′S · RÉCORD</span>
+<div class="w-10 h-10 rounded-full border-3 border-stamp-red bg-stamp-dim flex items-center justify-center font-slab text-sm font-bold my-2 text-stamp-red group-hover:bg-stamp-red group-hover:text-white transition-colors shadow-sm">
+              02
+            </div>
+<span class="font-slab text-base text-petrol-dark">Chicama</span>
+<span class="font-mono text-[11px] font-bold text-stamp-red">Izquierda Eterna</span>
+</a>
+<div class="hidden lg:block w-12 h-[2px] bg-ink-black/40 border-b border-dashed border-ink-black"></div>
+<!-- Spot 3: Pacasmayo -->
+<a href="#spot-pacasmayo" class="flex flex-col items-center group">
+<span class="font-mono text-[10px] text-ink-black/60">07°24′S · EL FARO</span>
+<div class="w-8 h-8 rounded-full border-2 border-ink-black bg-paper flex items-center justify-center font-slab text-xs font-bold my-2 group-hover:bg-stamp-red group-hover:text-white transition-colors">
+              03
+            </div>
+<span class="font-slab text-sm text-ink-black">Pacasmayo</span>
+<span class="font-mono text-[11px] text-ink-black/70">Pared Abierta</span>
+</a>
+<div class="hidden lg:block w-12 h-[2px] bg-ink-black/40 border-b border-dashed border-ink-black"></div>
+<!-- Spot 4: Lobitos -->
+<a href="#spot-lobitos" class="flex flex-col items-center group">
+<span class="font-mono text-[10px] text-petrol-dark font-bold">04°27′S · TALARA</span>
+<div class="w-10 h-10 rounded-full border-3 border-petrol-dark bg-paper flex items-center justify-center font-slab text-sm font-bold my-2 text-petrol-dark group-hover:bg-petrol-dark group-hover:text-white transition-colors">
+              04
+            </div>
+<span class="font-slab text-base text-petrol-dark">Lobitos</span>
+<span class="font-mono text-[11px] font-bold text-ink-black">Tubos y Viento</span>
+</a>
+<div class="hidden lg:block w-12 h-[2px] bg-ink-black/40 border-b border-dashed border-ink-black"></div>
+<!-- Spot 5: Cabo Blanco -->
+<a href="#spot-cabo-blanco" class="flex flex-col items-center group">
+<span class="font-mono text-[10px] text-stamp-red font-bold">04°15′S · POTENCIA</span>
+<div class="w-8 h-8 rounded-full border-2 border-ink-black bg-paper flex items-center justify-center font-slab text-xs font-bold my-2 group-hover:bg-stamp-red group-hover:text-white transition-colors">
+              05
+            </div>
+<span class="font-slab text-sm text-ink-black">Cabo Blanco</span>
+<span class="font-mono text-[11px] text-ink-black/70">Tubo Clásico</span>
+</a>
+<div class="hidden lg:block w-12 h-[2px] bg-ink-black/40 border-b border-dashed border-ink-black"></div>
+<!-- Spot 6: Máncora -->
+<a href="#spot-mancora" class="flex flex-col items-center group">
+<span class="font-mono text-[10px] text-ink-black/60">04°06′S · AGUA TIBIA</span>
+<div class="w-8 h-8 rounded-full border-2 border-ink-black bg-paper flex items-center justify-center font-slab text-xs font-bold my-2 group-hover:bg-stamp-red group-hover:text-white transition-colors">
+              06
+            </div>
+<span class="font-slab text-sm text-ink-black">Máncora</span>
+<span class="font-mono text-[11px] text-ink-black/70">Point de Verano</span>
+</a>
+</div>
+</div>
+<!-- 6 DETAILED SPOT DOSSIERS (FIELD REPORTS WITH PHOTOS & MASKING TAPE) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- SPOT 1: CHICAMA -->
+<div id="spot-chicama" class="scroll-mt-20 border-4 border-ink-black bg-paper p-5 relative shadow-[6px_6px_0px_#1A1816]">
+<div class="absolute -top-3 left-10 w-24 h-5 masking-tape transform -rotate-2 z-10"></div>
+<div class="relative aspect-video border-2 border-ink-black overflow-hidden mb-4">
+<img loading="lazy" decoding="async" alt="Ola de Chicama" class="w-full h-full object-cover object-center filter contrast-125" src="img/ola-de-chicama.jpg">
+<span class="absolute top-1 left-1 bg-stamp-red text-white text-[9px] font-mono px-1 font-bold">RÉCORD MUNDIAL</span>
+</div>
+<h3 class="font-slab text-lg text-ink-black leading-snug">Chicama (Malabrigo)</h3>
+<p class="font-body text-xs text-ink-black/80 mt-2 leading-relaxed">
+            La ola izquierda más extensa del globo terráqueo. Secciones conectables de más de 2.2 kilómetros. Navegamos en lancha de retorno para que surfees hasta que las piernas tiemblen.
+          </p>
+<div class="mt-4 pt-3 border-t border-ink-black/20 text-[11px] font-body space-y-1">
+<div class="flex justify-between"><span class="">Temporada:</span> <strong class="text-petrol-dark">Abril - Noviembre</strong></div>
+<div class="flex justify-between"><span class="">Fondo:</span> <span class="">Arena fina uniforme</span></div>
+<div class="flex justify-between"><span class="">Viento:</span> <span class="">Offshore suave AM</span></div>
+</div>
+</div>
+<!-- SPOT 2: LOBITOS -->
+<div id="spot-lobitos" class="scroll-mt-20 border-4 border-ink-black bg-paper p-5 relative shadow-[6px_6px_0px_#1A1816]">
+<div class="absolute -top-3 right-8 w-24 h-5 masking-tape transform rotate-3 z-10"></div>
+<div class="relative aspect-video border-2 border-ink-black overflow-hidden mb-4">
+<img loading="lazy" decoding="async" alt="Punta de Lobitos" class="w-full h-full object-cover object-center filter contrast-125" src="img/punta-de-lobitos.jpg">
+<span class="absolute top-1 left-1 bg-petrol-dark text-white text-[9px] font-mono px-1 font-bold">TUBOS &amp; VIENTO</span>
+</div>
+<h3 class="font-slab text-lg text-ink-black leading-snug">Lobitos Point</h3>
+<p class="font-body text-xs text-ink-black/80 mt-2 leading-relaxed">
+            Múltiples rompientes en 3 kilómetros: Punta, Muelle, Hueco y Baterías. Tubos ultrarrápidos sobre fondo de arena y roca. Viento térmico ideal para maniobras aéreas al atardecer.
+          </p>
+<div class="mt-4 pt-3 border-t border-ink-black/20 text-[11px] font-body space-y-1">
+<div class="flex justify-between"><span class="">Temporada:</span> <strong class="text-petrol-dark">Todo el año</strong></div>
+<div class="flex justify-between"><span class="">Fondo:</span> <span class="">Arena y laja suave</span></div>
+<div class="flex justify-between"><span class="">Oleaje:</span> <span class="">Sur / Suroeste</span></div>
+</div>
+</div>
+<!-- SPOT 3: CABO BLANCO -->
+<div id="spot-cabo-blanco" class="scroll-mt-20 border-4 border-ink-black bg-paper p-5 relative shadow-[6px_6px_0px_#1A1816]">
+<div class="absolute -top-3 left-14 w-24 h-5 masking-tape transform -rotate-1 z-10"></div>
+<div class="relative aspect-video border-2 border-ink-black overflow-hidden mb-4">
+<img loading="lazy" decoding="async" alt="Tubo pesado en Cabo Blanco" class="w-full h-full object-cover object-center filter contrast-125" src="img/tubo-pesado-en-cabo-blanco.jpg">
+<span class="absolute top-1 left-1 bg-stamp-red text-white text-[9px] font-mono px-1 font-bold">EXPERTO / TUBO</span>
+</div>
+<h3 class="font-slab text-lg text-ink-black leading-snug">Cabo Blanco</h3>
+<p class="font-body text-xs text-ink-black/80 mt-2 leading-relaxed">
+            El "Pipeline Peruano". Tubos secos, redondos y agresivos que quiebran sobre arrecife poco profundo. Requiere oleajes de energía provenientes del hemisferio norte (North Swell).
+          </p>
+<div class="mt-4 pt-3 border-t border-ink-black/20 text-[11px] font-body space-y-1">
+<div class="flex justify-between"><span class="">Temporada:</span> <strong class="text-petrol-dark">Noviembre - Abril</strong></div>
+<div class="flex justify-between"><span class="">Fondo:</span> <span class="">Arrecife y roca</span></div>
+<div class="flex justify-between"><span class="">Nivel:</span> <span class="text-stamp-red font-bold">Avanzado</span></div>
+</div>
+</div>
+<!-- SPOT 4: PACASMAYO -->
+<div id="spot-pacasmayo" class="scroll-mt-20 border-4 border-ink-black bg-paper p-5 relative shadow-[6px_6px_0px_#1A1816]">
+<div class="relative aspect-video border-2 border-ink-black overflow-hidden mb-4">
+<img loading="lazy" decoding="async" alt="El Faro de Pacasmayo" class="w-full h-full object-cover object-center filter contrast-125" src="img/el-faro-de-pacasmayo.jpg">
+<span class="absolute top-1 left-1 bg-ink-black text-paper text-[9px] font-mono px-1">BIG WAVE / OPEN WALL</span>
+</div>
+<h3 class="font-slab text-lg text-ink-black leading-snug">Pacasmayo (El Faro)</h3>
+<p class="font-body text-xs text-ink-black/80 mt-2 leading-relaxed">
+            Punta con capacidad para recibir oleajes masivos sin cerrar. Paredes monumentales para carvear con potencia y conectar giros interminables hasta el muelle histórico.
+          </p>
+<div class="mt-4 pt-3 border-t border-ink-black/20 text-[11px] font-body space-y-1">
+<div class="flex justify-between"><span class="">Temporada:</span> <strong class="text-petrol-dark">Mayo - Octubre</strong></div>
+<div class="flex justify-between"><span class="">Fondo:</span> <span class="">Canto rodado y arena</span></div>
+<div class="flex justify-between"><span class="">Longitud:</span> <span class="">Hasta 1.5 km</span></div>
+</div>
+</div>
+<!-- SPOT 5: MÁNCORA -->
+<div id="spot-mancora" class="scroll-mt-20 border-4 border-ink-black bg-paper p-5 relative shadow-[6px_6px_0px_#1A1816]">
+<div class="relative aspect-video border-2 border-ink-black overflow-hidden mb-4">
+<img loading="lazy" decoding="async" alt="Playa de Mancora" class="w-full h-full object-cover object-center filter contrast-125" src="img/playa-de-mancora.jpg">
+<span class="absolute top-1 left-1 bg-petrol-dark text-paper text-[9px] font-mono px-1">AGUA CÁLIDA</span>
+</div>
+<h3 class="font-slab text-lg text-ink-black leading-snug">Máncora Point</h3>
+<p class="font-body text-xs text-ink-black/80 mt-2 leading-relaxed">
+            Izquierda noble con agua templada durante los meses de verano. Sesiones al amanecer sin traje de neopreno antes de que despierte la brisa costera.
+          </p>
+<div class="mt-4 pt-3 border-t border-ink-black/20 text-[11px] font-body space-y-1">
+<div class="flex justify-between"><span class="">Temporada:</span> <strong class="text-petrol-dark">Noviembre - Marzo</strong></div>
+<div class="flex justify-between"><span class="">Agua:</span> <span class="">22°C - 26°C (Sin traje)</span></div>
+<div class="flex justify-between"><span class="">Tipo:</span> <span class="">Pointbreak suave</span></div>
+</div>
+</div>
+<!-- SPOT 6: HUANCHACO -->
+<div id="spot-huanchaco" class="scroll-mt-20 border-4 border-ink-black bg-paper p-5 relative shadow-[6px_6px_0px_#1A1816]">
+<div class="relative aspect-video border-2 border-ink-black overflow-hidden mb-4">
+<img loading="lazy" decoding="async" alt="Caballitos de totora en Huanchaco" class="w-full h-full object-cover object-center filter contrast-125" src="img/caballitos-de-totora-en-huanchaco.jpg">
+<span class="absolute top-1 left-1 bg-ink-black text-paper text-[9px] font-mono px-1">PATRIMONIO MILENARIO</span>
+</div>
+<h3 class="font-slab text-lg text-ink-black leading-snug">Huanchaco</h3>
+<p class="font-body text-xs text-ink-black/80 mt-2 leading-relaxed">
+            Reserva Mundial de Surf donde los pescadores aún doman las olas montados en caballitos de totora de 3,000 años de antigüedad. Consistencia los 365 días del año.
+          </p>
+<div class="mt-4 pt-3 border-t border-ink-black/20 text-[11px] font-body space-y-1">
+<div class="flex justify-between"><span class="">Temporada:</span> <strong class="text-petrol-dark">Constante todo el año</strong></div>
+<div class="flex justify-between"><span class="">Cultura:</span> <span class="">Cuna del surf sudamericano</span></div>
+<div class="flex justify-between"><span class="">Gastronomía:</span> <span class="">Ceviche mochica tradicional</span></div>
+</div>
+</div>
+</div>
+<!-- FULL BLEED PETROL BANNER: NO CROWD GUARANTEE -->
+<div class="mt-14 bg-petrol-dark text-paper border-4 border-ink-black p-8 md:p-12 shadow-[10px_10px_0px_#1A1816]">
+<div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+<div>
+<span class="text-stamp-red font-mono text-xs uppercase tracking-widest font-bold">CONFIDENCIALIDAD DE EXPEDICIÓN</span>
+<h3 class="font-slab text-2xl md:text-3xl text-paper tracking-normal leading-tight mt-1">
+              Spots Sin Crowd · Acceso Privilegiado
+            </h3>
+<p class="font-body text-xs md:text-sm text-paper/80 mt-3 leading-relaxed">
+              No publicamos las coordenadas GPS de nuestras bahías secundarias. Con camionetas 4x4 y botes propios, te situamos en picos desiertos donde solo estarán tú, tu guía y tus compañeros de viaje.
+            </p>
+</div>
+<a class="whitespace-nowrap bg-stamp-red hover:bg-paper hover:text-ink-black text-white font-slab text-lg md:text-xl px-6 pt-5 pb-4 border-2 border-ink-black transition-all shadow-[4px_4px_0px_#1A1816]" href="https://wa.me/51951235217?text=%C2%A1Hola!%20Quiero%20conocer%20el%20reporte%20de%20olas%20actual" rel="noopener noreferrer" target="_blank">
+            Consultar Forecast ➔
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. COACHING Y VIDEOANÁLISIS (MESA DE LUZ / DIAPOSITIVA TÉCNICA) -->
+<section class="scroll-mt-16 w-full py-16 md:py-24 border-b-5 border-ink-black bg-paper-card" id="coaching">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Editorial Pitch & Italic Quote -->
+<div class="lg:col-span-6 flex flex-col gap-6">
+<div>
+<span class="text-xs uppercase tracking-widest font-bold text-stamp-red">[ ENTRENAMIENTO BIOMECÁNICO ]</span>
+<h2 class="font-slab text-2xl md:text-4xl text-ink-black tracking-normal leading-tight mt-1">
+              Coaching de Alto Rendimiento
+            </h2>
+</div>
+<!-- Highlight quote in Instrument Serif Italic -->
+<blockquote class="font-serif italic text-2xl md:text-3xl text-petrol-dark border-l-4 border-stamp-red pl-4 my-2 leading-snug">
+            "Grabamos tus olas, las analizamos contigo en tierra y corriges en 3 días lo que tomaría años por cuenta propia."
+          </blockquote>
+<p class="font-body text-xs md:text-sm text-ink-black/80 leading-relaxed mb-4">
+            No basta con surfear por sensaciones. Nuestras sesiones de videoanálisis incluyen:
+          </p>
+          <ul class="font-body text-xs md:text-sm text-ink-black/80 space-y-2 list-none pl-1">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-stamp-red flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span><strong class="font-bold">Grabación 4K</strong> a 60 cuadros por segundo desde acantilados y botes.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-stamp-red flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span><strong class="font-bold">Corrección en tierra</strong> mediante revisión en pantalla gigante.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 text-stamp-red flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span><strong class="font-bold">Análisis cuadro a cuadro</strong> de tu punto de mirada, flexión pélvica y timing.</span>
+            </li>
+          </ul>
+<div class="border-2 border-ink-black p-4 bg-paper space-y-3 font-mono text-xs">
+<div class="flex items-start gap-2">
+<span class="text-stamp-red font-bold">01.</span>
+<span class=""><strong>Toma desde tierra:</strong> Ángulo abierto de trayectoria sobre la pared.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="text-stamp-red font-bold">02.</span>
+<span class=""><strong>Toma de agua/zodiac:</strong> Dinámica de compresión en el bottom turn.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="text-stamp-red font-bold">03.</span>
+<span class=""><strong>Entrega privada en nube:</strong> Te llevas todos los clips en bruto y editados.</span>
+</div>
+</div>
+</div>
+<!-- Right: Lightbox Frame with Technical Annotations -->
+<div class="lg:col-span-6">
+<div class="border-5 border-ink-black bg-ink-black p-3 shadow-[10px_10px_0px_#E8472B] relative">
+<!-- Video analysis frame -->
+<div class="relative overflow-hidden aspect-[4/3] bg-petrol-dark border border-paper/20">
+<img loading="lazy" decoding="async" alt="Análisis biomecánico de surf" class="w-full h-full object-cover filter contrast-125" src="img/analisis-biomecanico-de-surf.jpg">
+<!-- Red Vector & Telemetry Overlays -->
+<div class="absolute inset-0 p-4 pointer-events-none flex flex-col justify-between">
+<div class="flex justify-between items-start text-[10px] font-mono">
+<span class="bg-stamp-red text-white px-2 py-0.5 font-bold uppercase tracking-wider">
+                    ● REC 4K 60FPS · ZOOM TELE
+                  </span>
+<span class="bg-black/80 text-paper px-2 py-0.5 border border-paper/30">
+                    FRAME #0418 // VECT-ANALYSIS
+                  </span>
+</div>
+<!-- Drawn vector marks (SVG line simulation) -->
+<div class="absolute top-1/2 left-1/3 transform -translate-y-1/2 text-stamp-red font-mono text-[11px] font-bold">
+<div class="border-b-2 border-dashed border-stamp-red w-28 transform -rotate-12"></div>
+<span class="bg-black/90 px-1 text-white">Ángulo de ataque: 64°</span>
+</div>
+<div class="bg-ink-black/90 text-paper p-3 border border-paper/20 flex items-center justify-between text-xs font-mono">
+<div>
+<span class="text-paper/60 text-[9px] block">SPOT / SESIÓN</span>
+<strong>Lobitos · Muelle Left</strong>
+</div>
+<div>
+<span class="text-paper/60 text-[9px] block">VELOCIDAD POCKET</span>
+<strong class="text-stamp-red">28.4 km/h</strong>
+</div>
+<div>
+<span class="text-paper/60 text-[9px] block">CORRECCIÓN</span>
+<span class="">Hombro adelantado ➔</span>
+</div>
+</div>
+</div>
+</div>
+<div class="text-[10px] text-paper/70 font-mono mt-2 flex justify-between px-1">
+<span class="">SISTEMA DE ANÁLISIS DEPORTIVO PNS</span>
+<span class="">COACH: RENZO VALDERRAMA</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. TESTIMONIOS (POSTALES Y RECORTES DE PAPEL ROTADOS) -->
+<section class="scroll-mt-16 w-full py-16 md:py-24 border-b-5 border-ink-black bg-paper">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12 border-b-3 border-ink-black pb-4">
+<div>
+<span class="text-xs uppercase tracking-widest font-bold text-stamp-red">[ DIARIO DE VIAJEROS ]</span>
+<h2 class="font-slab text-3xl md:text-5xl text-ink-black tracking-normal leading-tight mt-1">
+            Postales del Agua
+          </h2>
+</div>
+<p class="font-body text-xs md:text-sm text-ink-black/70">
+          Experiencias reales de surfistas que confiaron en nuestra logística.
+        </p>
+</div>
+<!-- 3 Postcards with masking tape & rotated angles -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<!-- Postcard 1: Camila R. -->
+<div class="border-3 border-ink-black bg-paper-card p-6 relative shadow-[6px_6px_0px_#1A1816] transform -rotate-2 hover:rotate-0 transition-transform">
+<div class="absolute -top-3 left-1/4 w-28 h-6 masking-tape transform rotate-2 z-10"></div>
+<div class="text-xs font-mono text-ink-black/60 uppercase mb-3 flex items-center justify-between">
+<span class="">SANTIAGO, CHILE</span>
+<span class="text-stamp-red font-bold">★★★★★</span>
+</div>
+<p class="font-serif italic text-xl text-ink-black mb-6 leading-relaxed">
+            "El servicio de zodiac en Chicama es una locura absoluta. Corrí olas de dos minutos seguidos sin desgastarme nadando contra la corriente. El videoanálisis cambió mi posición del pie trasero en solo tres días."
+          </p>
+<div class="border-t border-ink-black/30 pt-3 flex items-center justify-between font-mono text-xs">
+<span class="font-bold text-petrol-dark uppercase">Camila R.</span>
+<span class="text-ink-black/60">Intermedio · Chicama Camp</span>
+</div>
+</div>
+<!-- Postcard 2: Lucas P. -->
+<div class="border-3 border-ink-black bg-paper-card p-6 relative shadow-[6px_6px_0px_#1A1816] transform rotate-1 hover:rotate-0 transition-transform">
+<div class="absolute -top-3 right-8 w-28 h-6 masking-tape transform -rotate-3 z-10"></div>
+<div class="text-xs font-mono text-ink-black/60 uppercase mb-3 flex items-center justify-between">
+<span class="">FLORIANÓPOLIS, BRASIL</span>
+<span class="text-stamp-red font-bold">★★★★★</span>
+</div>
+<p class="font-serif italic text-xl text-ink-black mb-6 leading-relaxed">
+            "Fui solo con temor de no encajar con el grupo y fue el mejor viaje del año. La crew te hace sentir como en casa, las 4x4 llegan a olas desiertas y el ceviche fresco post-surf es insuperable."
+          </p>
+<div class="border-t border-ink-black/30 pt-3 flex items-center justify-between font-mono text-xs">
+<span class="font-bold text-petrol-dark uppercase">Lucas P.</span>
+<span class="text-ink-black/60">Avanzado · Lobitos Safari</span>
+</div>
+</div>
+<!-- Postcard 3: Daniel K. -->
+<div class="border-3 border-ink-black bg-paper-card p-6 relative shadow-[6px_6px_0px_#1A1816] transform -rotate-1 hover:rotate-0 transition-transform">
+<div class="absolute -top-3 left-10 w-28 h-6 masking-tape transform rotate-1 z-10"></div>
+<div class="text-xs font-mono text-ink-black/60 uppercase mb-3 flex items-center justify-between">
+<span class="">CALIFORNIA, EE. UU.</span>
+<span class="text-stamp-red font-bold">★★★★★</span>
+</div>
+<p lang="en" class="font-serif italic text-xl text-ink-black mb-6 leading-relaxed">
+            "Top tier logistics. They picked us up right at Talara airport, ice cold local beers ready, and within two hours we were surfing an empty pointbreak with zero crowd. Pure north shore magic."
+          </p>
+<div class="border-t border-ink-black/30 pt-3 flex items-center justify-between font-mono text-xs">
+<span class="font-bold text-petrol-dark uppercase">Daniel K.</span>
+<span class="text-ink-black/60">Intermedio · Private Trip</span>
+</div>
+</div>
+</div>
+<!-- Instagram Dispatch Bar -->
+<div class="border-2 border-dashed border-ink-black p-4 bg-paper-card flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs">
+<div class="flex items-center gap-3">
+<span class="font-bold uppercase tracking-wider text-stamp-red">REGISTRO AUDIOVISUAL DIARIO:</span>
+<span class="">Más de 500 clips, partes completas y testimonios en video en vivo.</span>
+</div>
+<a class="font-bold text-ink-black hover:text-stamp-red underline decoration-2 underline-offset-4" href="https://instagram.com/perunorthshore" rel="noopener noreferrer" target="_blank">
+          @perunorthshore en Instagram ➔
+        </a>
+</div>
+</div>
+</section>
+<!-- 9. CÓMO FUNCIONA (ESCALERA DIAGONAL 1-4 CON NÚMEROS MONUMENTALES) -->
+<section class="scroll-mt-16 w-full py-16 md:py-24 border-b-5 border-ink-black bg-paper-card">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-14 border-b-3 border-ink-black pb-4">
+<div>
+<span class="text-xs uppercase tracking-widest font-bold text-stamp-red">[ PROTOCOLO DE EMBARQUE ]</span>
+<h2 class="font-slab text-3xl md:text-5xl text-ink-black tracking-normal leading-tight mt-1">
+            Cómo Planear tu Viaje
+          </h2>
+</div>
+<div class="font-body text-sm text-ink-black/70">
+          En solo cuatro pasos estás en el agua con nosotros.
+        </div>
+</div>
+<!-- Diagonal sequence layout -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+<!-- STEP 01 -->
+<div class="border-4 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between">
+<div>
+<span class="font-slab text-6xl text-ink-black/20 block leading-none select-none">01</span>
+<h3 class="font-slab text-lg leading-snug text-stamp-red mt-2">Escríbenos</h3>
+<p class="font-body text-xs text-ink-black/80 mt-3 leading-relaxed">
+              Mándanos un mensaje por WhatsApp. Dinos tu nivel de surf, qué quiver tienes o si necesitas tablas, y en qué rango de fechas puedes viajar.
+            </p>
+</div>
+<span class="text-[10px] font-mono text-ink-black/50 border-t border-ink-black/20 pt-2 mt-6 block">PASO 1 // CONTACTO</span>
+</div>
+<!-- STEP 02 -->
+<div class="border-4 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between md:translate-y-4">
+<div>
+<span class="font-slab text-6xl text-ink-black/20 block leading-none select-none">02</span>
+<h3 class="font-slab text-lg leading-snug text-petrol-dark mt-2">Plan a Medida</h3>
+<p class="font-body text-xs text-ink-black/80 mt-3 leading-relaxed">
+              Cruzamos tu fecha con los swells previstos. Te proponemos el campamento o salida privada adecuada y reservas con el 30% del abono.
+            </p>
+</div>
+<span class="text-[10px] font-mono text-ink-black/50 border-t border-ink-black/20 pt-2 mt-6 block">PASO 2 // RESERVA</span>
+</div>
+<!-- STEP 03 -->
+<div class="border-4 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between md:translate-y-8">
+<div>
+<span class="font-slab text-6xl text-ink-black/20 block leading-none select-none">03</span>
+<h3 class="font-slab text-lg leading-snug text-ink-black mt-2">Recojo Directo</h3>
+<p class="font-body text-xs text-ink-black/80 mt-3 leading-relaxed">
+              Te esperamos en la puerta de arribos de Talara o Piura. Cargamos fundas en la 4x4, te instalas en el lodge y hacemos la sesión de calentamiento.
+            </p>
+</div>
+<span class="text-[10px] font-mono text-ink-black/50 border-t border-ink-black/20 pt-2 mt-6 block">PASO 3 // ARRIBO</span>
+</div>
+<!-- STEP 04 -->
+<div class="border-4 border-ink-black p-6 bg-paper shadow-[6px_6px_0px_#1A1816] flex flex-col justify-between md:translate-y-12">
+<div>
+<span class="font-slab text-6xl text-ink-black/20 block leading-none select-none">04</span>
+<h3 class="font-slab text-lg leading-snug text-stamp-red mt-2">Puro Surfing</h3>
+<p class="font-body text-xs text-ink-black/80 mt-3 leading-relaxed">
+              Dos a tres sesiones por día con el mejor viento, zodiac en Chicama, ceviche de playa, videoanálisis por la noche y cero estrés.
+            </p>
+</div>
+<span class="text-[10px] font-mono text-ink-black/50 border-t border-ink-black/20 pt-2 mt-6 block">PASO 4 // EN EL AGUA</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. GUÍA DEL VIAJERO & FAQ (ACORDEÓN TIPOGRÁFICO CON LÍNEAS DE TINTA) -->
+<section class="scroll-mt-16 w-full py-16 md:py-24 border-b-5 border-ink-black bg-paper" id="faq">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left: Field Notes Guide (Notebook Style) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div>
+<span class="text-xs uppercase tracking-widest font-bold text-stamp-red">[ RECOMENDACIONES DE RUTA ]</span>
+<h2 class="font-slab text-2xl md:text-3xl text-ink-black tracking-normal leading-tight mt-1">
+              Libreta del Expedicionario
+            </h2>
+</div>
+<p class="font-body text-xs text-ink-black/80 leading-relaxed">
+            El desierto costero peruano tiene características únicas de radiación solar, viento y temperatura de agua.
+          </p>
+<div class="border-3 border-ink-black p-5 bg-paper-card space-y-4 font-body text-sm md:text-base">
+<div class="border-b border-ink-black/20 pb-3">
+<span class="font-bold text-stamp-red uppercase block mb-1">☀ Protección Solar Desértica</span>
+<p class="text-ink-black/80">Usa barra de óxido de zinc mineral para la cara. La radiación ultravioleta del desierto es extrema en el agua.</p>
+</div>
+<div class="border-b border-ink-black/20 pb-3">
+<span class="font-bold text-petrol-dark uppercase block mb-1">🌊 Trajes de Neopreno</span>
+<p class="text-ink-black/80">Lobitos y Chicama requieren 3/2 mm todo el año. En verano para Cabo Blanco o Máncora puedes surfear con lycra o shorty.</p>
+</div>
+<div class="border-b border-ink-black/20 pb-3">
+<span class="font-bold text-stamp-red uppercase block mb-1">💧 Hidratación y Electrolitos</span>
+<p class="text-ink-black/80">Llevamos sales minerales y agua helada en la 4x4. Entre sesiones se pierden más de 2 litros de agua por deshidratación solar.</p>
+</div>
+<div>
+<span class="font-bold text-petrol-dark uppercase block mb-1">👂 Cuidado de Oídos</span>
+<p class="text-ink-black/80">Por el viento térmico constante de la tarde, sugerimos tapones de silicona moldeables tipo SurfEars para cuidar tus oídos.</p>
+</div>
+</div>
+</div>
+<!-- Right: Pure Typographic Ink Accordion -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div>
+<span class="text-xs uppercase tracking-widest font-bold text-stamp-red">[ PREGUNTAS CLAVE ]</span>
+<h2 class="font-slab text-3xl md:text-4xl text-ink-black uppercase tracking-tight mt-1">
+              Dudas Resueltas
+            </h2>
+</div>
+<div class="divide-y-3 divide-ink-black border-y-3 border-ink-black">
+<!-- FAQ 1 -->
+<details class="group py-4 cursor-pointer">
+<summary class="flex justify-between items-center font-slab text-base md:text-lg text-ink-black group-hover:text-stamp-red list-none py-2">
+<span class="">¿Qué nivel de surf requiero para unirme?</span>
+<span class="font-mono text-2xl font-bold group-open:rotate-45 transition-transform">+</span>
+</summary>
+<div class="font-body text-sm md:text-base text-ink-black/80 pt-3 leading-relaxed">
+                Aceptamos desde nivel intermedio principiante (capaz de remar y ponerse de pie en paredes verdes de tamaño medio) hasta avanzados cazadores de tubos. Al contar con dos camionetas 4x4, dividimos el grupo para que cada quien corra la ola perfecta para su capacidad sin exponer a nadie.
+              </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group py-4 cursor-pointer">
+<summary class="flex justify-between items-center font-slab text-base md:text-lg text-ink-black group-hover:text-stamp-red list-none py-2">
+<span class="">¿Cómo se realiza el pago y cómo aseguro el cupo?</span>
+<span class="font-mono text-2xl font-bold group-open:rotate-45 transition-transform">+</span>
+</summary>
+<div class="font-body text-sm md:text-base text-ink-black/80 pt-3 leading-relaxed">
+                Tu cupo queda 100% reservado abonando el 30% mediante transferencia bancaria (Perú / internacional), tarjeta de crédito o PayPal. El 70% restante se cancela hasta 7 días antes de la fecha de arribo o al hacer el check-in en el lodge.
+              </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group py-4 cursor-pointer">
+<summary class="flex justify-between items-center font-slab text-base md:text-lg text-ink-black group-hover:text-stamp-red list-none py-2">
+<span class="">¿Cuál es la política de cancelación o cambios?</span>
+<span class="font-mono text-2xl font-bold group-open:rotate-45 transition-transform">+</span>
+</summary>
+<div class="font-body text-sm md:text-base text-ink-black/80 pt-3 leading-relaxed">
+                Avisando con 30 días de anticipación puedes reprogramar tu expedición sin penalidad dentro de los siguientes 12 meses según disponibilidad de cupos. Para cancelaciones definitivas con más de 30 días se reembolsa el 80% del abono.
+              </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group py-4 cursor-pointer">
+<summary class="flex justify-between items-center font-slab text-base md:text-lg text-ink-black group-hover:text-stamp-red list-none py-2">
+<span class="">¿Puedo viajar con un acompañante no surfista?</span>
+<span class="font-mono text-2xl font-bold group-open:rotate-45 transition-transform">+</span>
+</summary>
+<div class="font-body text-sm md:text-base text-ink-black/80 pt-3 leading-relaxed">
+                ¡Totalmente! Tenemos una tarifa especial de acompañante no surfista que incluye el mismo hospedaje boutique frente al mar, gastronomía completa, traslados y actividades como nado con tortugas marinas en El Ñuro, yoga y relax.
+              </div>
+</details>
+<!-- FAQ 5 -->
+<details class="group py-4 cursor-pointer">
+<summary class="flex justify-between items-center font-slab text-base md:text-lg text-ink-black group-hover:text-stamp-red list-none py-2">
+<span class="">¿Debo llevar mis tablas o puedo alquilar allá?</span>
+<span class="font-mono text-2xl font-bold group-open:rotate-45 transition-transform">+</span>
+</summary>
+<div class="font-body text-sm md:text-base text-ink-black/80 pt-3 leading-relaxed">
+                Ambas opciones funcionan perfecto. Si traes tu propio quiver te asesoramos previamente sobre qué modelos llevar según el forecast. Si prefieres viajar sin fundas pesadas, disponemos de un quiver de shortboards, fishes y midlengths para alquiler por día.
+              </div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. CTA FINAL MONUMENTAL (FONDO AZUL PETRÓLEO + ESPIRAL GIGANTE FILIGRANA + SELLO ROJO) -->
+<section class="scroll-mt-16 w-full bg-petrol-dark text-paper border-b-5 border-ink-black py-20 md:py-28 relative overflow-hidden text-center">
+<!-- Watermark Linocut Spiral Wave in background -->
+<div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
+<img loading="lazy" decoding="async" alt="Filigrana Espiral" class="w-[800px] h-[800px] object-contain filter invert contrast-200" src="img/logo.png">
+</div>
+<div class="max-w-5xl mx-auto px-4 md:px-8 relative z-10 flex flex-col items-center">
+<!-- Linocut stamp centered -->
+<div class="w-24 h-24 mb-6 transform -rotate-3 p-2 border-3 border-paper/40 rounded-full bg-paper">
+<img loading="lazy" decoding="async" alt="Sello Oficial PNS" class="w-full h-full object-contain filter contrast-125" src="img/logo.png">
+</div>
+<span class="text-stamp-red bg-paper px-3 py-1 font-mono text-xs uppercase tracking-widest font-bold border-2 border-ink-black mb-4">
+        TEMPORADA 2026 ABIERTA
+      </span>
+<h2 class="font-slab text-3xl md:text-5xl lg:text-6xl tracking-normal text-paper leading-[1.1] mb-6">
+        ¿LISTO PARA TU PRÓXIMA OLA?
+      </h2>
+<p class="font-serif italic text-xl md:text-2xl text-paper/80 max-w-2xl mb-8 leading-snug">
+        "Las mejores izquierdas del planeta siguen quebrando en el desierto. Escríbenos y coordinemos tus fechas antes de que se completen los cupos."
+      </p>
+<!-- Big WhatsApp Stamp Button -->
+<a class="inline-flex items-center gap-4 wa-btn-fill bg-stamp-red text-white font-slab text-xl md:text-3xl px-8 pt-5 pb-4 border-4 border-ink-black shadow-[8px_8px_0px_#1A1816] transform hover:-translate-y-1 transition-transform" href="https://wa.me/51951235217?text=%C2%A1Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20de%20un%20surf%20trip" rel="noopener noreferrer" target="_blank">
+<span class="">Hablar por WhatsApp (+51 951 235 217)</span>
+<span class="font-mono text-xl">➔</span>
+</a>
+<div class="mt-6 flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-paper/70">
+<span class="">✓ Asesoría personalizada por coach local</span>
+<span class="">✓ Respuesta en menos de 15 mins</span>
+<span class="">✓ Salidas garantizadas 2026</span>
+</div>
+</div>
+</section>
+<!-- FOOTER EN PAPEL HUESO CON SELLO, CONTACTO Y DECLARACIÓN DE ORIGEN -->
+<footer class="w-full bg-paper border-t-4 border-ink-black relative z-10 pb-28 md:pb-0" style="z-index: var(--z-content);">
+  <div class="grid grid-cols-1 md:grid-cols-4 divide-y-2 md:divide-y-0 md:divide-x-2 divide-ink-black border-b-4 border-ink-black">
+    
+    <!-- COLUMNA 1: ORIGEN -->
+    <div class="p-6 lg:p-8 flex flex-col">
+      <span class="font-mono text-[10px] lg:text-xs font-bold tracking-widest mb-8 md:mb-12 uppercase">N.º 01 / Origen</span>
+      <div class="flex items-center gap-4 mb-6">
+        <img loading="lazy" src="img/logo.png" class="w-12 h-12 object-contain filter invert contrast-200" alt="Logo Perú North Shore">
+        <span class="font-slab text-2xl lg:text-3xl leading-none">Perú North<br>Shore</span>
+      </div>
+      <p class="font-mono text-sm leading-relaxed mb-8 md:mb-12 max-w-sm">Surf trips guiados por la costa norte del Perú. Coach local, spots sin crowd y videoanálisis. Cupos limitados por salida.</p>
+      <div class="flex flex-col gap-2 font-mono text-sm font-bold mt-auto">
+        <a href="https://wa.me/51951235217?text=%C2%A1Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20de%20un%20surf%20trip" target="_blank" rel="noopener noreferrer" class="w-fit hover:underline decoration-2 underline-offset-4 focus:outline-none focus:ring-2 focus:ring-stamp-red">+51 951 235 217</a>
+        <a href="mailto:hola@perunorthshore.com" class="w-fit hover:underline decoration-2 underline-offset-4 focus:outline-none focus:ring-2 focus:ring-stamp-red">hola@perunorthshore.com</a>
+      </div>
+    </div>
+
+    <!-- COLUMNA 2: RUTA -->
+    <div class="p-6 lg:p-8 flex flex-col">
+      <span class="font-mono text-[10px] lg:text-xs font-bold tracking-widest mb-8 md:mb-12 uppercase">N.º 02 / Ruta</span>
+      <nav class="flex flex-col gap-2">
+        <a href="#viajes" class="group font-slab text-xl lg:text-2xl w-fit relative inline-block focus:outline-none focus:ring-2 focus:ring-stamp-red">
+          <span class="relative z-10">VIAJES</span>
+          <span class="absolute left-0 bottom-0.5 w-0 h-[4px] bg-stamp-red transition-all duration-250 ease-out group-hover:w-full"></span>
+        </a>
+        <a href="#spots" class="group font-slab text-xl lg:text-2xl w-fit relative inline-block focus:outline-none focus:ring-2 focus:ring-stamp-red">
+          <span class="relative z-10">SPOTS</span>
+          <span class="absolute left-0 bottom-0.5 w-0 h-[4px] bg-stamp-red transition-all duration-250 ease-out group-hover:w-full"></span>
+        </a>
+        <a href="#incluye" class="group font-slab text-xl lg:text-2xl w-fit relative inline-block focus:outline-none focus:ring-2 focus:ring-stamp-red">
+          <span class="relative z-10">QUÉ INCLUYE</span>
+          <span class="absolute left-0 bottom-0.5 w-0 h-[4px] bg-stamp-red transition-all duration-250 ease-out group-hover:w-full"></span>
+        </a>
+        <a href="#coaching" class="group font-slab text-xl lg:text-2xl w-fit relative inline-block focus:outline-none focus:ring-2 focus:ring-stamp-red">
+          <span class="relative z-10">COACHING</span>
+          <span class="absolute left-0 bottom-0.5 w-0 h-[4px] bg-stamp-red transition-all duration-250 ease-out group-hover:w-full"></span>
+        </a>
+        <a href="#faq" class="group font-slab text-xl lg:text-2xl w-fit relative inline-block focus:outline-none focus:ring-2 focus:ring-stamp-red">
+          <span class="relative z-10">FAQ</span>
+          <span class="absolute left-0 bottom-0.5 w-0 h-[4px] bg-stamp-red transition-all duration-250 ease-out group-hover:w-full"></span>
+        </a>
+      </nav>
+      <p class="font-mono text-xs mt-auto pt-10 font-bold opacity-80">→ Reserva por WhatsApp</p>
+    </div>
+
+    <!-- COLUMNA 3: POSICIÓN -->
+    <div class="p-6 lg:p-8 flex flex-col">
+      <span class="font-mono text-[10px] lg:text-xs font-bold tracking-widest mb-8 md:mb-12 uppercase">N.º 03 / Posición</span>
+      <div class="flex flex-col mt-auto" aria-hidden="true">
+        <span class="font-slab leading-none tracking-tighter text-4xl lg:text-5xl" style="-webkit-text-stroke: 1.5px #1A1816; color: transparent;">4°27'S</span>
+        <span class="font-slab leading-none tracking-tighter text-4xl lg:text-5xl" style="-webkit-text-stroke: 1.5px #1A1816; color: transparent;">81°16'W</span>
+      </div>
+      <p class="font-mono text-[10px] lg:text-xs font-bold mt-6 tracking-widest leading-relaxed">LOBITOS · CHICAMA · PACASMAYO · CABO BLANCO · MÁNCORA</p>
+    </div>
+
+    <!-- COLUMNA 4: SELLO -->
+    <div class="p-6 lg:p-8 flex flex-col relative overflow-hidden min-h-64">
+      <span class="font-mono text-[10px] lg:text-xs font-bold tracking-widest mb-4 w-full text-center md:text-left uppercase">N.º 04 / Sello</span>
+      <div class="absolute inset-0 flex justify-center items-center pointer-events-none mt-8 md:mt-0">
+        <svg class="footer-stamp w-40 h-40 lg:w-48 lg:h-48 text-stamp-red opacity-0" viewBox="0 0 200 200" role="img" aria-label="Sello: Certificado de expedición, Sin crowd">
+          <defs>
+            <filter id="ink-texture-footer" x="-20%" y="-20%" width="140%" height="140%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" result="noise" />
+              <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+            <path id="stamp-path-top-footer" d="M 20, 100 A 80, 80 0 0, 1 180, 100" fill="transparent" />
+            <path id="stamp-path-bottom-footer" d="M 180, 100 A 80, 80 0 0, 1 20, 100" fill="transparent" />
+          </defs>
+          <g filter="url(#ink-texture-footer)" fill="none" stroke="currentColor">
+            <circle cx="100" cy="100" r="96" stroke-width="4" />
+            <circle cx="100" cy="100" r="88" stroke-width="1.5" />
+            <circle cx="100" cy="100" r="58" stroke-width="2" />
+            <text font-family="'Space Mono', monospace" font-size="14" font-weight="bold" fill="currentColor" stroke="none" letter-spacing="1">
+              <textPath href="#stamp-path-top-footer" startOffset="50%" text-anchor="middle">CERTIFICADO DE EXPEDICIÓN</textPath>
+            </text>
+            <text font-family="'Space Mono', monospace" font-size="17" font-weight="bold" fill="currentColor" stroke="none" letter-spacing="3">
+              <textPath href="#stamp-path-bottom-footer" startOffset="50%" text-anchor="middle">SIN CROWD</textPath>
+            </text>
+            <path d="M 70, 105 Q 85, 75 100, 95 T 130, 105" stroke-width="5" stroke-linecap="round" />
+            <path d="M 65, 115 Q 85, 85 100, 105 T 135, 115" stroke-width="2" stroke-linecap="round" />
+            <!-- Cancellation lines -->
+            <path d="M 10, 70 Q 30, 60 50, 70 T 90, 70 T 130, 70" stroke-width="2" opacity="0.5" transform="rotate(-40 50 70)" />
+            <path d="M 10, 130 Q 30, 120 50, 130 T 90, 130 T 130, 130" stroke-width="2" opacity="0.5" transform="rotate(-40 50 130)" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- BARRA INFERIOR -->
+  <div class="flex flex-col md:flex-row justify-between items-center px-6 lg:px-8 py-6 gap-6">
+    <div class="flex flex-col gap-1 items-center md:items-start text-center md:text-left">
+      <span class="font-mono text-[10px] lg:text-xs font-bold tracking-widest uppercase" style="letter-spacing: 0.1em;">Hecho en el desierto del norte del Perú</span>
+      <span class="font-mono text-[10px] lg:text-xs">© 2026 Perú North Shore</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="https://instagram.com/perunorthshore" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-11 h-11 flex items-center justify-center border-2 border-ink-black text-ink-black hover:bg-ink-black hover:text-paper transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-stamp-red">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <a href="https://wa.me/51951235217?text=%C2%A1Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20de%20un%20surf%20trip" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-11 h-11 flex items-center justify-center border-2 border-ink-black text-ink-black hover:bg-ink-black hover:text-paper transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-stamp-red">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a3.8 3.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
+      <a href="mailto:hola@perunorthshore.com" aria-label="Correo" class="w-11 h-11 flex items-center justify-center border-2 border-ink-black text-ink-black hover:bg-ink-black hover:text-paper transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-stamp-red">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+<!-- FLOATING RED CIRCULAR STAMP BUTTON (ALL SCREENS) -->
+<aside class="fixed bottom-4 right-4 md:bottom-6 md:right-6" style="z-index: var(--z-floating)">
+<a class="group relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-stamp-red text-white rounded-full border-3 border-ink-black shadow-[4px_4px_0px_#1A1816] transform hover:scale-105 transition-all" href="https://wa.me/51951235217?text=%C2%A1Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20de%20un%20surf%20trip" rel="noopener noreferrer" target="_blank" title="Escríbenos por WhatsApp" aria-label="Escríbenos por WhatsApp">
+<!-- Circular rotating text stamp around -->
+<svg class="absolute inset-0 w-full h-full animate-spin-slow pointer-events-none p-1" viewBox="0 0 100 100">
+<path d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" id="circlePath"></path>
+<text fill="white" font-family="'Space Mono', monospace" font-size="8.5" font-weight="bold" letter-spacing="2">
+<textPath href="#circlePath" startOffset="0%">
+            • ESCRÍBENOS • WHATSAPP • RESERVA
+          </textPath>
+</text>
+</svg>
+<!-- Center icon / wave mini stamp -->
+<div class="flex flex-col items-center justify-center z-10">
+<svg class="w-7 h-7 md:w-8 md:h-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 3H4a2 2 0 0 0-2 2v17l4-4h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/></svg>
+<span class="text-[8px] font-mono font-bold leading-none uppercase">CHAT</span>
+</div>
+</a>
+</aside>
+<script>
+(function () {
+  var b = document.getElementById('menu-btn'), n = document.getElementById('mobile-nav');
+  function set(open) {
+    n.classList.toggle('hidden', !open);
+    n.classList.toggle('flex', open);
+    b.setAttribute('aria-expanded', open);
+    b.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+  }
+  b.addEventListener('click', function () { set(b.getAttribute('aria-expanded') !== 'true'); });
+  n.addEventListener('click', function (e) { if (e.target.tagName === 'A') set(false); });
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+<script src="main.js?v=8" defer></script>
+</body>
+</html>
